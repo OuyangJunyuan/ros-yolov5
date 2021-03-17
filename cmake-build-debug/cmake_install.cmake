@@ -129,6 +129,22 @@ file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/ou/workspace/ros_ws
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_yolo/action" TYPE FILE FILES "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/action/yolo.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_yolo/msg" TYPE FILE FILES
+    "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloAction.msg"
+    "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloActionGoal.msg"
+    "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloActionResult.msg"
+    "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloActionFeedback.msg"
+    "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloGoal.msg"
+    "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloResult.msg"
+    "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_yolo/msg" TYPE FILE FILES
     "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg/bbox2d.msg"
     "/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg/result.msg"

@@ -6,7 +6,7 @@
 
 ## ROS Service
 
-实现yolo作为service的server,使用步骤如下:
+实现yolo作为service的server,发送sensor::Imge 图片,得到yolo检测的结果(置信度,2dbbox左上右下点坐标,附加文本信息,分类结果),	使用步骤如下:
 
 0. 依赖安装
    1. 安装好`pytorch`
@@ -16,7 +16,7 @@
 
 2. `demo_server.py`开头`#!/home/ou/software/anaconda3/envs/dl/bin/python`换为自己装有`pytorch`的虚拟环境下的解释器
 
-   1. 运行`launch/demo.launch` 启动service-server
+   1. 运行`launch/service_demo.launch` 启动service-server
 
 3. 参考`demo_client.cpp`
 

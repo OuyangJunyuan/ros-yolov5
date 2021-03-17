@@ -185,7 +185,7 @@ foreach(t ${ros_yolo_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "message_runtime;roscpp;rospy;message_generation;std_msgs;sensor_msgs;cv_bridge")
+set(depends "message_runtime;roscpp;rospy;message_generation;actionlib;actionlib_msgs;std_msgs;sensor_msgs;cv_bridge")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

@@ -99,6 +99,7 @@ ros_yolo_EXTERNAL_OBJECTS =
 
 devel/lib/ros_yolo/ros_yolo: CMakeFiles/ros_yolo.dir/src/demo_client.cpp.o
 devel/lib/ros_yolo/ros_yolo: CMakeFiles/ros_yolo.dir/build.make
+devel/lib/ros_yolo/ros_yolo: /opt/ros/melodic/lib/libactionlib.so
 devel/lib/ros_yolo/ros_yolo: /opt/ros/melodic/lib/libroscpp.so
 devel/lib/ros_yolo/ros_yolo: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 devel/lib/ros_yolo/ros_yolo: /opt/ros/melodic/lib/libxmlrpcpp.so

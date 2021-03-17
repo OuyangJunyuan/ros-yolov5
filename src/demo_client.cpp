@@ -21,6 +21,7 @@ int main(int argc, char **argv) {
 
         ros::ServiceClient client = n.serviceClient<ros_yolo::yolo>("yolo_service");
         client.waitForExistence(ros::Duration(30e-3));
+
         ros_yolo::yolo srv;
         srv.request.image = *cv_bridge::CvImage(std_msgs::Header(), "bgr8", frame).toImageMsg();
         if (client.call(srv)) {
@@ -34,7 +35,7 @@ int main(int argc, char **argv) {
                 cv::putText(frame, result.label, p1, cv::FONT_HERSHEY_COMPLEX,
                             1, cv::Scalar(0, 0, 255),
                             1, 0);
-                
+
             }
         } else {
             ROS_ERROR("request fail");

@@ -3,6 +3,13 @@ file(REMOVE_RECURSE
   "devel/lib/python2.7/dist-packages/ros_yolo/msg/__init__.py"
   "devel/lib/python2.7/dist-packages/ros_yolo/msg/_bbox2d.py"
   "devel/lib/python2.7/dist-packages/ros_yolo/msg/_result.py"
+  "devel/lib/python2.7/dist-packages/ros_yolo/msg/_yoloAction.py"
+  "devel/lib/python2.7/dist-packages/ros_yolo/msg/_yoloActionFeedback.py"
+  "devel/lib/python2.7/dist-packages/ros_yolo/msg/_yoloActionGoal.py"
+  "devel/lib/python2.7/dist-packages/ros_yolo/msg/_yoloActionResult.py"
+  "devel/lib/python2.7/dist-packages/ros_yolo/msg/_yoloFeedback.py"
+  "devel/lib/python2.7/dist-packages/ros_yolo/msg/_yoloGoal.py"
+  "devel/lib/python2.7/dist-packages/ros_yolo/msg/_yoloResult.py"
   "devel/lib/python2.7/dist-packages/ros_yolo/srv/__init__.py"
   "devel/lib/python2.7/dist-packages/ros_yolo/srv/_yolo.py"
 )

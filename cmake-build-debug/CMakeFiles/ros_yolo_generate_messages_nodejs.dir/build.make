@@ -73,21 +73,96 @@ CMAKE_BINARY_DIR = /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-deb
 # Include the progress variables for this target.
 include CMakeFiles/ros_yolo_generate_messages_nodejs.dir/progress.make
 
-CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js
 CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/result.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloFeedback.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js
+CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloGoal.js
 CMakeFiles/ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/srv/yolo.js
 
 
-devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
-devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js: ../msg/bbox2d.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from ros_yolo/bbox2d.msg"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg/bbox2d.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: devel/share/ros_yolo/msg/yoloAction.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: devel/share/ros_yolo/msg/yoloFeedback.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: ../msg/result.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: devel/share/ros_yolo/msg/yoloActionGoal.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: devel/share/ros_yolo/msg/yoloResult.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: devel/share/ros_yolo/msg/yoloActionResult.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: ../msg/bbox2d.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: devel/share/ros_yolo/msg/yoloGoal.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js: devel/share/ros_yolo/msg/yoloActionFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from ros_yolo/yoloAction.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloAction.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js: devel/share/ros_yolo/msg/yoloActionGoal.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js: devel/share/ros_yolo/msg/yoloGoal.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from ros_yolo/yoloActionGoal.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloActionGoal.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+
+devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js: devel/share/ros_yolo/msg/yoloResult.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js: ../msg/result.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js: ../msg/bbox2d.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from ros_yolo/yoloResult.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloResult.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
 
 devel/share/gennodejs/ros/ros_yolo/msg/result.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 devel/share/gennodejs/ros/ros_yolo/msg/result.js: ../msg/result.msg
 devel/share/gennodejs/ros/ros_yolo/msg/result.js: ../msg/bbox2d.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from ros_yolo/result.msg"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg/result.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from ros_yolo/result.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg/result.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js: devel/share/ros_yolo/msg/yoloActionFeedback.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js: devel/share/ros_yolo/msg/yoloFeedback.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from ros_yolo/yoloActionFeedback.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloActionFeedback.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+
+devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js: ../msg/bbox2d.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from ros_yolo/bbox2d.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg/bbox2d.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+
+devel/share/gennodejs/ros/ros_yolo/msg/yoloFeedback.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/yoloFeedback.js: devel/share/ros_yolo/msg/yoloFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from ros_yolo/yoloFeedback.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloFeedback.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: devel/share/ros_yolo/msg/yoloActionResult.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalID.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: ../msg/result.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: /opt/ros/melodic/share/actionlib_msgs/msg/GoalStatus.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: devel/share/ros_yolo/msg/yoloResult.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: ../msg/bbox2d.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from ros_yolo/yoloActionResult.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloActionResult.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
+
+devel/share/gennodejs/ros/ros_yolo/msg/yoloGoal.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/ros_yolo/msg/yoloGoal.js: devel/share/ros_yolo/msg/yoloGoal.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloGoal.js: /opt/ros/melodic/share/sensor_msgs/msg/Image.msg
+devel/share/gennodejs/ros/ros_yolo/msg/yoloGoal.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from ros_yolo/yoloGoal.msg"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg/yoloGoal.msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/msg
 
 devel/share/gennodejs/ros/ros_yolo/srv/yolo.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 devel/share/gennodejs/ros/ros_yolo/srv/yolo.js: ../srv/yolo.srv
@@ -95,12 +170,19 @@ devel/share/gennodejs/ros/ros_yolo/srv/yolo.js: /opt/ros/melodic/share/sensor_ms
 devel/share/gennodejs/ros/ros_yolo/srv/yolo.js: ../msg/result.msg
 devel/share/gennodejs/ros/ros_yolo/srv/yolo.js: ../msg/bbox2d.msg
 devel/share/gennodejs/ros/ros_yolo/srv/yolo.js: /opt/ros/melodic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from ros_yolo/yolo.srv"
-	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/srv/yolo.srv -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Javascript code from ros_yolo/yolo.srv"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/srv/yolo.srv -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/ros_yolo/msg -Iros_yolo:/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/msg -Iroscpp:/opt/ros/melodic/share/roscpp/cmake/../msg -Iactionlib:/opt/ros/melodic/share/actionlib/cmake/../msg -Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p ros_yolo -o /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/share/gennodejs/ros/ros_yolo/srv
 
 ros_yolo_generate_messages_nodejs: CMakeFiles/ros_yolo_generate_messages_nodejs
-ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloAction.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloActionGoal.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloResult.js
 ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/result.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloActionFeedback.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/bbox2d.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloFeedback.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloActionResult.js
+ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/msg/yoloGoal.js
 ros_yolo_generate_messages_nodejs: devel/share/gennodejs/ros/ros_yolo/srv/yolo.js
 ros_yolo_generate_messages_nodejs: CMakeFiles/ros_yolo_generate_messages_nodejs.dir/build.make
 

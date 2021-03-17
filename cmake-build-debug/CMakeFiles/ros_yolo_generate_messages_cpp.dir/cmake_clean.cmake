@@ -3,6 +3,13 @@ file(REMOVE_RECURSE
   "devel/include/ros_yolo/bbox2d.h"
   "devel/include/ros_yolo/result.h"
   "devel/include/ros_yolo/yolo.h"
+  "devel/include/ros_yolo/yoloAction.h"
+  "devel/include/ros_yolo/yoloActionFeedback.h"
+  "devel/include/ros_yolo/yoloActionGoal.h"
+  "devel/include/ros_yolo/yoloActionResult.h"
+  "devel/include/ros_yolo/yoloFeedback.h"
+  "devel/include/ros_yolo/yoloGoal.h"
+  "devel/include/ros_yolo/yoloResult.h"
 )
 
 # Per-language clean rules from dependency scanning.
