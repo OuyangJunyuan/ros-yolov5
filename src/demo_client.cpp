@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
                 cv::putText(frame, result.label, p1, cv::FONT_HERSHEY_COMPLEX,
                             1, cv::Scalar(0, 0, 255),
                             1, 0);
-
+                
             }
         } else {
             ROS_ERROR("request fail");
