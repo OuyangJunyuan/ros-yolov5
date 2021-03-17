@@ -15,6 +15,7 @@ int main(int argc, char **argv) {
     cv::VideoCapture capture;
     capture.open("/home/ou/Desktop/video1.mp4");
     cv::Mat frame;
+
     while (capture.isOpened()) {
         capture.read(frame);
 

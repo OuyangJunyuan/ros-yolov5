@@ -1,5 +1,5 @@
-yolov5_path: /home/ou/Desktop/yolov5
-yolov5_model: yolov5s
-yolov5_weight: /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/model/best.pt
-device: gpu
-img_size: 640
+yolov5:
+#  path: /home/ou/Desktop/yolov5
+  weight: /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/model/best.pt
+  device: gpu
+  img_size: 640
