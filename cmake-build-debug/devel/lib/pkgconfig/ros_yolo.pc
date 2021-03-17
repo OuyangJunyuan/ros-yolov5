@@ -1,0 +1,8 @@
+prefix=/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel
+
+Name: ros_yolo
+Description: Description of ros_yolo
+Version: 0.0.0
+Cflags: -I/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/include -I/home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime roscpp rospy message_generation std_msgs sensor_msgs cv_bridge

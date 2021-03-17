@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/cmake-build-debug/devel/setup.sh

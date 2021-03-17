@@ -1,0 +1,4 @@
+<launch>
+    <node name="demo_client" pkg="ros_yoloV5" type="ros_yoloV5"/>
+    <node name="demo_server" pkg="ros_yoloV5" type="demo_server.py"/>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ros_yolo
+Description: Description of ros_yolo
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime roscpp rospy message_generation std_msgs sensor_msgs cv_bridge
