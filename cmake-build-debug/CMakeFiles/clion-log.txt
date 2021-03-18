@@ -18,7 +18,8 @@
 -- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 -- Generating .msg files for action ros_yolo/yolo /home/ou/workspace/ros_ws/dev_ws/src/ros_yolo/action/yolo.action
 -- ros_yolo: 9 messages, 1 services
--- Marking EXECUTABLE "ros_yolo" of package "ros_yolo" for installation
+-- Marking EXECUTABLE "service_client_demo" of package "ros_yolo" for installation
+-- Marking EXECUTABLE "action_client_demo" of package "ros_yolo" for installation
 -- Marking HEADER FILES in "include" folder of package "ros_yolo" for installation
 -- Marking SHARED CONTENT FOLDER "launch" of package "ros_yolo" for installation
 -- Configuring done

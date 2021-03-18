@@ -1,13 +1,14 @@
 import rospy
+import actionlib
 import ros_numpy as rnp
 from ros_yolo.srv import *
 from ros_yolo.msg import *
-
 from yolo_bridge.yolo_bridge_utils import *
 
 
 class Ros2Yolo:
-    def __init__(self, node_name='demo_server', service_name='yolo_service'):
+    def __init__(self, node_name='demo_server', name='yolo'):
+        self.isaction = rospy.get_param('yolov5/action', False)
         # load param
         self.yolo5_path = rospy.get_param('yolov5/path', None)
         self.model = rospy.get_param('yolov5/model', 'yolov5s')
@@ -20,8 +21,18 @@ class Ros2Yolo:
         self.half = True if self.device == 'gpu' else False
         self.names = []
 
+        if not self.load_model():
+            print('error occurred while loading !')
         rospy.init_node(node_name)
-        self.server = rospy.Service(service_name, yolo, self.request_handle)
+        if self.isaction:
+            self.server = actionlib.SimpleActionServer(name + '_action', ros_yolo.msg.yoloAction,
+                                                       execute_cb=self.request_handle, auto_start=False)
+            self.server.start()
+            print('action mode :', name + '_action')
+
+        else:
+            self.server = rospy.Service(name + '_service', yolo, self.request_handle)
+            print('service mode :', name + '_service')
 
     def load_model(self):
         if not self.valid:
@@ -43,10 +54,14 @@ class Ros2Yolo:
         return True
 
     def request_handle(self, req):
+        print('----------------')
         img0 = rnp.numpify(req.image)
 
         if len(img0) == 0:
-            return yoloResponse()
+            print('req.image.size == 0')
+            return yoloResult() if self.isaction else yoloResponse()
+
+        t1 = time_synchronized()
 
         img = letterbox(img0, self.img_size, stride=self.stride)[0].transpose(2, 0, 1)  # (3,w,h)
         img = np.ascontiguousarray(img)  # (1,3,w,h)
@@ -58,13 +73,12 @@ class Ros2Yolo:
         img = img.half() if self.half else img  # gpu才支持half()->float16
         img /= 255.0
         with torch.no_grad():
-            t1 = time_synchronized()
             pred = self.model(img)[0]
             # list of detections, on (n,6) tensor per image [xyxy, conf, cls]
             pred = non_max_suppression(pred, 0.25, 0.45)
-            t2 = time_synchronized()
 
-        response = yoloResponse()
+        response = yoloResult() if self.isaction else yoloResponse()
+
         for i, det in enumerate(pred):
             s = ''
             if len(det):
@@ -74,7 +88,7 @@ class Ros2Yolo:
                 # Print results
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
-                    s += f"{n} {self.names[int(c)]}{'s' * (n > 1)}, "  # add to string
+                    s += f"{self.names[int(c)]}{'s' * (n > 1)}: {n}\n"  # add to string
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
@@ -84,17 +98,24 @@ class Ros2Yolo:
                     res.prob = conf
                     res.bbox.xyxy = xyxy
                     response.results.append(res)
+            print(s)
+        # print(pred[0][:, -1].cpu().numpy().astype(np.int))
 
-        print(pred)
-        print((t2 - t1) * 1000)
-        return response
+        t2 = time_synchronized()
+        print('took {:.2f}'.format((t2 - t1) * 1000), 'ms')
+
+        if self.isaction:
+            response.image = req.image
+            self.server.set_succeeded(response)
+        else:
+            return response
 
     @staticmethod
     def print_list_multiline(names, num_line=5):
         length = len(names)
         print('[', end="")
         for i in range(0, length):
-            print('\'', end=''), print(names[i], end=''), print('\'', end='')
+            print(str(i) + ':' + '\'', end=''), print(names[i], end=''), print('\'', end='')
             if i == length - 1:
                 print(']')
             elif i % num_line == num_line - 1:

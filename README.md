@@ -12,13 +12,17 @@
    1. 安装好`pytorch`
    2. `catkin-simple`放入本包同一工程下
 
-1. 填写`config/config.demo`中参数,其中`weight为保存的pytorch模型.pt文件 ,  img_size为图片大小,必须和训练时的设置一致` 必填
+1. 填写`config/config.demo`中参数,其中
+
+   1. weight为保存的pytorch模型.pt文件 ,
+   2.  img_size为图片大小,必须和训练时的设置一致
+   3. action 为选择使用action模式还是service模式来使用ros2yolo功能
 
 2. `demo_server.py`开头`#!/home/ou/software/anaconda3/envs/dl/bin/python`换为自己装有`pytorch`的虚拟环境下的解释器
 
    1. 运行`launch/service_demo.launch` 启动service-server
 
-3. 参考`demo_client.cpp`
+3. 参考`src/service_client_demo.cpp`
 
    ```c++
    #include <cv_bridge/cv_bridge.h>
@@ -51,4 +55,10 @@
 
 ## ROS Action
 
-...考虑到检测时间比较长,用service会阻塞线程, 之后改用action
+填写`config/config.demo`中参数 `action=True`
+
+action-client 参考`src/action_client_demo.cpp`
+
+action_client发出的goal只需包含iamge即`goal.image = //sensor_msgs::Image`
+
+action_client接受到的结果`result`包含原始图像msg和检测结果即`result->image 和 result->result `
