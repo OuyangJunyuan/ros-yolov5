@@ -2,12 +2,12 @@
 // Created by ou on 2021/3/18.
 //
 #include <ros/ros.h>
+#include <ros/package.h>
 #include <actionlib/client/simple_action_client.h>
 
 #include <cv_bridge/cv_bridge.h>
 #include <ros_yolo/yolo.h>
 #include <ros_yolo/yoloAction.h>
-
 #include <boost/thread.hpp>
 #include <opencv2/opencv.hpp>
 
@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
 
 
     cv::VideoCapture capture;
-    capture.open("/home/ou/Desktop/video1.mp4");
+    capture.open(ros::package::getPath("ros_yolo") + "/resource/video1.mp4");
     cv::Mat frame;
     while (capture.isOpened()) {
         capture.read(frame);

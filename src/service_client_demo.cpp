@@ -5,9 +5,10 @@
 #include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <ros_yolo/yolo.h>
-#include <actionlib/client/simple_action_client.h>
 #include <ros_yolo/yoloAction.h>
+#include <actionlib/client/simple_action_client.h>
 #include <boost/thread.hpp>
+#include <ros/package.h>
 
 using namespace std;
 
@@ -17,7 +18,7 @@ int main(int argc, char **argv) {
     ros::NodeHandle n;
 
     cv::VideoCapture capture;
-    capture.open("/home/ou/Desktop/video1.mp4");
+    capture.open(ros::package::getPath("ros_yolo") + "/resource/video1.mp4");
     cv::Mat frame;
     bool isAction = false;
     n.getParam("yolov5/action", isAction);

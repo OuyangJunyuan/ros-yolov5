@@ -2,7 +2,9 @@
 
 环境:ubuntu18.04 + ros-melodic + python3.8 + pytorch1.0+
 
-编译依赖:[catkin_simple_pkg](https://github.com/catkin/catkin_simple) 下载放入同一个rosws下编译即可
+编译依赖:[catkin_simple_pkg](https://github.com/catkin/catkin_simple) 下载放入同一个rosws下`catkin_make` 编译
+
+此外
 
 ## ROS Service
 
@@ -20,7 +22,8 @@
 
 2. `demo_server.py`开头`#!/home/ou/software/anaconda3/envs/dl/bin/python`换为自己装有`pytorch`的虚拟环境下的解释器
 
-   1. 运行`launch/service_demo.launch` 启动service-server
+   1. 设置脚本为可执行权限
+   2. 运行`launch/service_demo.launch` 启动service-server
 
 3. 参考`src/service_client_demo.cpp`
 

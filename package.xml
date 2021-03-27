@@ -53,7 +53,7 @@
 
     <depend>roscpp</depend>
     <depend>rospy</depend>
-
+    <depend>roslib</depend>
     <depend>message_generation</depend>
     <exec_depend>message_runtime</exec_depend>
     <depend>actionlib</depend>
